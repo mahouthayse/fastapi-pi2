@@ -106,6 +106,7 @@ def get_user(id: str):
         "address_neighborhood": user.address_neighborhood,
         "address_city": user.address_city,
         "address_state": user.address_state,
+        "password":user.password
     }
     return JSONResponse(content=user_dict)
 
